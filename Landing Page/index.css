@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #4d4b5c;
+  margin: 30px;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: #545252;
+  margin-bottom: 30px;
+}
+
+nav .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1c1a1a;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+nav ul li a {
+  color: #1c1a1a;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #f5f5f5;
+}
+
+nav ul li a:hover {
+  color: #5d5b5b;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 5%;
+}
+
+.line .side1 {
+  padding-right: 50px;
+}
+
+.side1 h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #393939;
+}
+
+.side1 button {
+  width: 200px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border-style: none;
+  color: #7e1e1e;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ... (rest of the existing CSS) ... */
+
+.about {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.about .boxes .box p {
+  color: #ffffff;
+}
+
+.about .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about .boxes .box {
+  margin: 10px 20px;
+  max-width: calc(100% / 3 - 50px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+}
+
+.contact {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.content .title {
+  width: 80%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.title {
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.contactMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input2 {
+  margin-top: 10;
+}
+
+.label1 {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+  border-radius: 13px;
+  padding: 6px;
+}
+
+.input2 input {
+  border-color: #fcf4f4;
+  width: 400px;
+}
+
+.button {
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.button button {
+  width: 162px;
+  height: 35px;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+.button button:hover {
+  background-color: #f19f57;
+}
+
+button {
+  width: 162px;
+  height: 35px;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+button:hover {
+  background-color: #f19f57;
+}
+
+.rightside1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+
+.title1 {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.content1 {
+  width: 450px;
+  margin-top: 2px;
+  color: #808080;
+}
+
+footer {
+  background: #565555;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .footer span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+footer .footer span a {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+footer .footer span a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+  .contactMenu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .rightside1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+  }
+
+  .content1 {
+      width: 100%;
+      margin-top: 2px;
+      color: #808080;
+  }
+
+  .side2 img {
+      width: 95%;
+      height: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .side2 img {
+      width: 100%;
+  }
+
+  section .topic a {
+      font-size: 20px;
+  }
+
+  section .topic p {
+      font-size: 5px;
+  }
+
+  .about .boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .about .boxes .box {
+      max-width: 70%;
+      margin-bottom: 20px;
+  }
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.change .container {
+  color: #262222;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
